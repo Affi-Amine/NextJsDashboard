@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    experimental: {
+        ppr: 'incremental', //The 'incremental' value allows you to adopt PPR for specific routes.
+    },
+};
 
 module.exports = nextConfig;
